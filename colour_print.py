@@ -24,7 +24,10 @@ def colour_print(text: str, effect: str) -> None:
     output_string = "{0}{1}{2}".format(effect, text, RESET)
     print(output_string)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 colour_print("Hello, Red", RED)
 # test that the colour was reset
 print("This should be in the default terminal colour")
