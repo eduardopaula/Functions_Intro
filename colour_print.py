@@ -13,21 +13,19 @@ BOLD = '\u001b[1m'
 UNDERLINE = '\u001b[4m'
 REVERSE = '\u001b[7m'
 
+
 def colour_print(text: str, effect: str) -> None:
     """
-       Print `text` using the ANSI sequences to change colour, etc
+    Print `text` using the ANSI sequences to change colour, etc
 
-       :param text: The text to print.
-       :param effect: The effect we want.  One of the constants
-           defined at the start of this module.
-       """
+    :param text: The text to print.
+    :param effect: The effect we want.  One of the constants
+        defined at the start of this module.
+    """
     output_string = "{0}{1}{2}".format(effect, text, RESET)
     print(output_string)
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/main
 colour_print("Hello, Red", RED)
 # test that the colour was reset
 print("This should be in the default terminal colour")
